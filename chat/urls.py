@@ -4,6 +4,8 @@ from . import api
 
 urlpatterns = [
     path("", api.conversation_list, name="conversation_list"),
+    # rewriting the above url using related names on User model
+    path("conversation_list_2", api.conversation_list_2, name="conversation_list_2"),
     path("<uuid:pk>/", api.conversation_detail, name="conversation_detail"),
     # Same as above with ListAPIView
     path(

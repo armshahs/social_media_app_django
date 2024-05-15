@@ -26,6 +26,14 @@ def conversation_list(request):
     return Response(serializer.data)
 
 
+# rewriting the above url using related names on User model
+@api_view(["GET"])
+def conversation_list_2(request):
+    conversations = request.user.conversations.all()
+    serializer = ConversationSerializer(conversations, many=True)
+    return Response({"message": "related name", "data": serializer.data})
+
+
 @api_view(["GET"])
 def conversation_detail(request, pk):
     # first filter if you are an owner, and then only get the conversation by pk.

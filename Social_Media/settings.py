@@ -52,7 +52,7 @@ CSRF_TRUSTED_ORIGINS = [
 
 # Application definition
 
-# Added for email verification durign signup
+# Added for email verification during signup
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 # Added for custom auth user model

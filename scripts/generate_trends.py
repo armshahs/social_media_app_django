@@ -9,7 +9,7 @@ from datetime import timedelta
 from collections import Counter
 from django.utils import timezone
 
-
+# sys is used to point to the manage.oy file.
 sys.path.append(os.path.join(os.path.abspath(os.path.dirname(__file__)), ".."))
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Social_Media.settings")
 django.setup()
