@@ -2,8 +2,6 @@ A social media app where users can add friends, create posts, add comments, send
 
 # Social Media App using Django
 
-![Social Media App](https://via.placeholder.com/800x400)
-
 ## Overview
 
 This project is a social media application built using Django, allowing users to create profiles, post updates, follow other users, like and comment on posts, and more. It provides a foundation for building a basic social networking platform.
@@ -16,6 +14,41 @@ This project is a social media application built using Django, allowing users to
 - **Following/Followers:** Users can follow other users and see updates from users they follow.
 - **Likes and Comments:** Users can like and comment on posts.
 - **Search:** Basic search functionality to find users or posts.
+
+
+## URL Endpoints
+
+### Authentication
+
+- **Registration:** `/register/`
+- **Login:** `/login/`
+- **Logout:** `/logout/`
+
+### Profile
+
+- **View Profile:** `/profile/<username>/`
+- **Edit Profile:** `/profile/edit/`
+
+### Posts
+
+- **Create Post:** `/post/create/`
+- **Edit Post:** `/post/<post_id>/edit/`
+- **Delete Post:** `/post/<post_id>/delete/`
+
+### Following/Followers
+
+- **Follow User:** `/follow/<username>/`
+- **Unfollow User:** `/unfollow/<username>/`
+
+### Likes and Comments
+
+- **Like Post:** `/post/<post_id>/like/`
+- **Unlike Post:** `/post/<post_id>/unlike/`
+- **Comment on Post:** `/post/<post_id>/comment/`
+
+### Search
+
+- **Search:** `/search/`
 
 ## Installation
 
@@ -58,39 +91,6 @@ python manage.py runserver
 
 6. Visit `http://localhost:8000` in your web browser to access the application.
 
-## URL Endpoints
-
-### Authentication
-
-- **Registration:** `/register/`
-- **Login:** `/login/`
-- **Logout:** `/logout/`
-
-### Profile
-
-- **View Profile:** `/profile/<username>/`
-- **Edit Profile:** `/profile/edit/`
-
-### Posts
-
-- **Create Post:** `/post/create/`
-- **Edit Post:** `/post/<post_id>/edit/`
-- **Delete Post:** `/post/<post_id>/delete/`
-
-### Following/Followers
-
-- **Follow User:** `/follow/<username>/`
-- **Unfollow User:** `/unfollow/<username>/`
-
-### Likes and Comments
-
-- **Like Post:** `/post/<post_id>/like/`
-- **Unlike Post:** `/post/<post_id>/unlike/`
-- **Comment on Post:** `/post/<post_id>/comment/`
-
-### Search
-
-- **Search:** `/search/`
 
 ## Usage
 
@@ -110,15 +110,5 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 3. Make your changes and commit them: `git commit -am 'Add new feature'`.
 4. Push to your branch: `git push origin feature/my-feature`.
 5. Submit a pull request detailing your changes.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Acknowledgments
-
-Special thanks to [armshahs](https://github.com/armshahs) for creating this project.
-
----
 
 This format organizes the URL endpoints into sections based on their functionality, making it easier for users to locate the endpoints they need.
