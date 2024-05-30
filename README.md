@@ -1,9 +1,5 @@
 A social media app where users can add friends, create posts, add comments, send friend requests, receive notifications, follow hashtag trends, report posts, etc.
 
-Certainly! Grouping URL endpoints under headings can make the README more organized and easier to navigate. Here's the updated version with URL endpoints grouped under headings:
-
----
-
 # Social Media App using Django
 
 ![Social Media App](https://via.placeholder.com/800x400)
