@@ -1,5 +1,3 @@
-A social media app where users can add friends, create posts, add comments, send friend requests, receive notifications, follow hashtag trends, report posts, etc.
-
 # Social Media App using Django
 
 ## Overview
@@ -89,15 +87,13 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-6. Visit `http://localhost:8000` in your web browser to access the application.
-
 
 ## Usage
 
 1. Register for a new account or login if you already have one.
-2. Create and edit your profile by clicking on your username in the navigation bar.
-3. Create new posts from the homepage.
-4. Follow other users to see their updates on your homepage.
+2. Create and edit your profile.
+3. Create new posts.
+4. Follow other users to see their updates.
 5. Like and comment on posts by other users.
 6. Use the search functionality to find users or posts.
 
