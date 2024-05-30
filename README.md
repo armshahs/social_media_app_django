@@ -107,4 +107,3 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 4. Push to your branch: `git push origin feature/my-feature`.
 5. Submit a pull request detailing your changes.
 
-This format organizes the URL endpoints into sections based on their functionality, making it easier for users to locate the endpoints they need.
