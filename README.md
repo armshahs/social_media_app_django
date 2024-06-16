@@ -24,6 +24,7 @@ This project is a social media application built using Django, allowing users to
 - **View Self Profile:** `api/me/`
 - **Edit Profile:** `api/editprofile/`
 - **Edit Password:** `api/edit_password/`
+- **Activate Email:** `api/activateemail/`
 
 ### Posts
 
