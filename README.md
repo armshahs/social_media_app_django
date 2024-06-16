@@ -50,10 +50,12 @@ This project is a social media application built using Django, allowing users to
 - **Suggested friends:** `api/friends/suggested/`
 
 
-### Following/Followers
+### Conversations
 
-- **Follow User:** `api/follow/<username>/`
-- **Unfollow User:** `api/unfollow/<username>/`
+- **Conversation list:** `api/chat/`
+- **Conversation detail:** `api/chat/<uuid:pk>/`
+- **Conversation send message:** `api/chat/<uuid:pk>/send/`
+- **Conversation get or create:** `api/chat/<uuid:user_pk>/get-or-create/`
 
 ### Search
 
