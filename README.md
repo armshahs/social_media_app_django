@@ -32,8 +32,7 @@ This project is a social media application built using Django, allowing users to
 - **Post List (for specific profile):** `/api/posts/profile/<uuid:id>/`
 - **Post Detail View:** `/api/posts/<uuid:pk>/`
 - **Create Post:** `api/posts/create/`
-- **Edit Post:** `api/posts/<post_id>/edit/`
-- **Delete Post:** `api/posts/<post_id>/delete/`
+- **Delete Post:** `api/posts/<uuid:pk>/delete/`
 - **Post Trends:** `/api/posts/trends/`
 - 
 
@@ -42,11 +41,11 @@ This project is a social media application built using Django, allowing users to
 - **Follow User:** `api/follow/<username>/`
 - **Unfollow User:** `api/unfollow/<username>/`
 
-### Likes and Comments
+### Likes, Comments & Report Post
 
-- **Like Post:** `api/post/<post_id>/like/`
-- **Unlike Post:** `api/post/<post_id>/unlike/`
-- **Comment on Post:** `api/post/<post_id>/comment/`
+- **Like Post:** `api/posts/<uuid:pk>/like/`
+- **Comment on Post:** `api/posts/<uuid:pk>/comment/`
+- **Report Post:** `api/posts/<uuid:pk>/report/`
 
 ### Search
 
