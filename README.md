@@ -16,37 +16,41 @@ This project is a social media application built using Django, allowing users to
 
 ## URL Endpoints
 
-### Authentication
+### Authentication & Profile
 
-- **Registration:** `/register/`
-- **Login:** `/login/`
-- **Logout:** `/logout/`
-
-### Profile
-
-- **View Profile:** `/profile/<username>/`
-- **Edit Profile:** `/profile/edit/`
+- **Registration:** `api/signup/`
+- **Login:** `api/login/`
+- **Refresh token:** `api/refresh/`
+- **View Self Profile:** `api/me/`
+- **Edit Profile:** `api/editprofile/`
+- **Edit Password:** `api/edit_password/`
 
 ### Posts
 
-- **Create Post:** `/post/create/`
-- **Edit Post:** `/post/<post_id>/edit/`
-- **Delete Post:** `/post/<post_id>/delete/`
+- **Post List:** `/api/posts/`
+- **Post List (with pagination & trends query params):** `/api/posts/?page=1&size=5&trend=django`
+- **Post List (for specific profile):** `/api/posts/profile/<uuid:id>/`
+- **Post Detail View:** `/api/posts/<uuid:pk>/`
+- **Create Post:** `api/posts/create/`
+- **Edit Post:** `api/posts/<post_id>/edit/`
+- **Delete Post:** `api/posts/<post_id>/delete/`
+- **Post Trends:** `/api/posts/trends/`
+- 
 
 ### Following/Followers
 
-- **Follow User:** `/follow/<username>/`
-- **Unfollow User:** `/unfollow/<username>/`
+- **Follow User:** `api/follow/<username>/`
+- **Unfollow User:** `api/unfollow/<username>/`
 
 ### Likes and Comments
 
-- **Like Post:** `/post/<post_id>/like/`
-- **Unlike Post:** `/post/<post_id>/unlike/`
-- **Comment on Post:** `/post/<post_id>/comment/`
+- **Like Post:** `api/post/<post_id>/like/`
+- **Unlike Post:** `api/post/<post_id>/unlike/`
+- **Comment on Post:** `api/post/<post_id>/comment/`
 
 ### Search
 
-- **Search:** `/search/`
+- **Search:** `api/search/`
 
 ## Installation
 
