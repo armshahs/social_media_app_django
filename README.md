@@ -9,7 +9,7 @@ This project is a social media application built using Django, allowing users to
 - **User Authentication:** Allow users to register, login, and manage their accounts.
 - **Profiles:** Users can create and edit their profiles, including uploading a profile picture and providing personal information.
 - **Posts:** Users can create, edit, and delete posts.
-- **Following/Followers:** Users can follow other users and see updates from users they follow.
+- **Friends:** Users can send friend requests to other users and see updates from users they follow.
 - **Likes and Comments:** Users can like and comment on posts.
 - **Search:** Basic search functionality to find users or posts.
 
@@ -112,7 +112,7 @@ python manage.py runserver
 1. Register for a new account or login if you already have one.
 2. Create and edit your profile.
 3. Create new posts.
-4. Follow other users to see their updates.
+4. Send friend request to other users to see their updates.
 5. Like and comment on posts by other users.
 6. Use the search functionality to find users or posts.
 
