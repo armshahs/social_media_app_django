@@ -34,18 +34,25 @@ This project is a social media application built using Django, allowing users to
 - **Create Post:** `api/posts/create/`
 - **Delete Post:** `api/posts/<uuid:pk>/delete/`
 - **Post Trends:** `/api/posts/trends/`
-- 
-
-### Following/Followers
-
-- **Follow User:** `api/follow/<username>/`
-- **Unfollow User:** `api/unfollow/<username>/`
 
 ### Likes, Comments & Report Post
 
 - **Like Post:** `api/posts/<uuid:pk>/like/`
 - **Comment on Post:** `api/posts/<uuid:pk>/comment/`
 - **Report Post:** `api/posts/<uuid:pk>/report/`
+
+### Friends
+
+- **Friends list:** `api/friends/<uuid:pk>/`
+- **Send friend request:** `api/friends/<uuid:pk>/request/`
+- **Handle friend request:** `api/friends/<uuid:pk>/<str:status>/`
+- **Suggested friends:** `api/friends/suggested/`
+
+
+### Following/Followers
+
+- **Follow User:** `api/follow/<username>/`
+- **Unfollow User:** `api/unfollow/<username>/`
 
 ### Search
 
