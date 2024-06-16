@@ -57,6 +57,12 @@ This project is a social media application built using Django, allowing users to
 - **Conversation send message:** `api/chat/<uuid:pk>/send/`
 - **Conversation get or create:** `api/chat/<uuid:user_pk>/get-or-create/`
 
+
+ ### Notifications
+
+ - **Notifications:** `api/notifications/`
+ - **Notifications - mark as read:** `api/notifications/read/<uuid:pk>/`
+
 ### Search
 
 - **Search:** `api/search/`
